@@ -21,7 +21,8 @@ export default function JobDetails() {
     useEffect(() => {
         const fetchJobDetails = async () => {
             try {
-                const res = await fetch(`http://localhost:5000/api/jobs/${id}`);
+                 const API_URL = import.meta.env.VITE_API_URL || 'https://stosimo-solution-backend1.onrender.com';
+                const res = await fetch(`${API_URL}/api/jobs/${id}`);
                 const data = await res.json();
                 console.log("job details", data);
                 setJob(data.job || data.data || data);
@@ -49,7 +50,8 @@ export default function JobDetails() {
             fd.append("subject", form.subject);
             fd.append("message", form.message);
             if (form.file) fd.append("resume", form.file);
-            const res = await fetch("http://localhost:5000/api/applications", { method: "POST", body: fd });
+            const API_URL = import.meta.env.VITE_API_URL || 'https://stosimo-solution-backend1.onrender.com';
+            const res = await fetch(`${API_URL}/api/applications`, { method: "POST", body: fd });
             if (!res.ok) throw new Error("Failed to apply");
             alert("Application submitted successfully!");
             navigate("/");

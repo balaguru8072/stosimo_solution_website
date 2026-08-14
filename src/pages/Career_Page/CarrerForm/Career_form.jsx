@@ -39,8 +39,8 @@ const CareerForm = () => {
         data.append('resume', formData.file); // backend field name is usually 'resume' or 'file' - change if needed
         // data.append('file', formData.file); // use this if your multer field is.single('file')
       }
-
-      const res = await axios.post('http://localhost:5000/api/applications', data, {
+      const API_URL = import.meta.env.VITE_API_URL || 'https://stosimo-solution-backend1.onrender.com';
+      const res = await axios.post(`${API_URL}/api/applications`, data, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
 

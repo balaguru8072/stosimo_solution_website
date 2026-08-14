@@ -46,7 +46,8 @@ const UiUxDesign = () => {
                 source: 'UI/UX Design Banner'
             };
 
-            const res = await axios.post('http://localhost:5000/api/service-messages', payload);
+            const API_URL = import.meta.env.VITE_API_URL || 'https://stosimo-solution-backend1.onrender.com';
+            const res = await axios.post(`${API_URL}/api/service-messages`, payload);
 
             if (res.status === 200 || res.status === 201) {
                 toast.success('Message sent successfully! Our team will contact you soon.');

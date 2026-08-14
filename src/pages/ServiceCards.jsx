@@ -17,7 +17,8 @@ const ServiceCards = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const res = await fetch('http://localhost:5000/api/services');
+        const API_URL = import.meta.env.VITE_API_URL || 'https://stosimo-solution-backend1.onrender.com';
+        const res = await fetch(`${API_URL}/api/services`);
         const result = await res.json();
         if (result.success) {
           setServices(result.data);

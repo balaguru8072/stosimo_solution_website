@@ -27,7 +27,8 @@ export default function JobOpenings() {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/jobs");
+        const API_URL = import.meta.env.VITE_API_URL || 'https://stosimo-solution-backend1.onrender.com';
+        const res = await fetch(`${API_URL}/api/jobs`);
         const data = await res.json();
         console.log("Fetched jobs:", data); // Log the fetched data for debugging
         // Backend should return array directly or { jobs: [] } or { data: [] }
