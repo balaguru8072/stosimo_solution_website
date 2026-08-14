@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider } from 'react-router-dom';
 import Layout from './Layout'; // Correct import
 import Parts from './pages/page_parts/parts';
 import AboutusParts from './pages/About_us/AboutUs_part/AboutusParts';
@@ -14,7 +14,7 @@ import JobDetails from './pages/Career_Page/Job_Opening/JobDetails';
 import DigitalMaketing from './pages/Services/Digital_Maket/DigitalMaketing';
 import AllServicesSection from './pages/Services/All_Service/AllServicesSection';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Layout />,
