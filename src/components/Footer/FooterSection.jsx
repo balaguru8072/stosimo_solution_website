@@ -578,7 +578,7 @@ const FooterSection = () => {
                   </div>
                   <div className="contact-info-text">
                     <span>Phone:</span>
-                    <h6><a href="tel:8438821762">+91 8438821762</a></h6>
+                    <h6><a href="tel:8438821762">04364-299144</a></h6>
                   </div>
                 </div>
               </div>

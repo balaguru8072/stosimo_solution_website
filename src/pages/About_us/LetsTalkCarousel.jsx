@@ -1,6 +1,7 @@
 import React from 'react';
 import { FiMessageSquare } from 'react-icons/fi';
 import { HiSparkles } from 'react-icons/hi2';
+import { Link } from 'react-router-dom';
 
 const LetsTalkCarousel = () => {
   return (
@@ -82,7 +83,11 @@ const LetsTalkCarousel = () => {
           line-height: 1.6;
         }
 
-       .cta-button {
+        .cta-button {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          text-decoration: none;
           background: #FFFFFF;
           color: #1E293B;
           padding: 18px 48px;
@@ -235,6 +240,13 @@ const LetsTalkCarousel = () => {
             gap: 50px;
           }
         }
+
+        @media (max-width: 768px) {
+          .cta-button {
+            width: 100%;
+            padding: 16px 40px;
+          }
+        }
       `}</style>
 
       <section className="cta-wrapper">
@@ -246,7 +258,7 @@ const LetsTalkCarousel = () => {
               <div className="cta-icon-circle">
                 <FiMessageSquare />
               </div>
-              
+
               {/* Content */}
               <div className="cta-content">
                 <h2 className="cta-title">Looking for the Best IT Business Solutions?</h2>
@@ -256,9 +268,9 @@ const LetsTalkCarousel = () => {
               </div>
 
               {/* Button - Right Side */}
-              <button className="cta-button">
+              <Link to="/contact" className="cta-button">
                 Take A Consultant
-              </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -274,21 +286,21 @@ const LetsTalkCarousel = () => {
                 </div>
                 <span className="talk-text white">Let's Talk</span>
               </div>
-              
+
               <div className="talk-item">
                 <div className="talk-icon light">
                   <HiSparkles />
                 </div>
                 <span className="talk-text white">Let's Talk</span>
               </div>
-              
+
               <div className="talk-item">
                 <div className="talk-icon purple">
                   <HiSparkles />
                 </div>
                 <span className="talk-text gradient">Let's Talk</span>
               </div>
-              
+
               <div className="talk-item">
                 <div className="talk-icon light">
                   <HiSparkles />
@@ -303,21 +315,21 @@ const LetsTalkCarousel = () => {
                 </div>
                 <span className="talk-text white">Let's Talk</span>
               </div>
-              
+
               <div className="talk-item">
                 <div className="talk-icon light">
                   <HiSparkles />
                 </div>
                 <span className="talk-text white">Let's Talk</span>
               </div>
-              
+
               <div className="talk-item">
                 <div className="talk-icon purple">
                   <HiSparkles />
                 </div>
                 <span className="talk-text gradient">Let's Talk</span>
               </div>
-              
+
               <div className="talk-item">
                 <div className="talk-icon light">
                   <HiSparkles />

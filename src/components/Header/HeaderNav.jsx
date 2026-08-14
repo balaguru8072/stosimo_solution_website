@@ -37,14 +37,14 @@ const HeaderNav = () => {
         // { name: 'SEO', path: '/services/seo' }
       ]
     },
-    {
-      title: 'Projects',
-      hasDropdown: true,
-      links: [
-        { name: 'Project Details', path: '/projects/details' },
-        { name: 'All Projects', path: '/projects' }
-      ]
-    },
+    // {
+    //   title: 'Projects',
+    //   hasDropdown: true,
+    //   links: [
+    //     { name: 'Project Details', path: '/projects/details' },
+    //     { name: 'All Projects', path: '/projects' }
+    //   ]
+    // },
 
     { title: 'Career', path: '/career', hasDropdown: false },
     // {
@@ -97,7 +97,7 @@ const HeaderNav = () => {
             <div className="flex items-center gap-6">
               <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
                 <Phone sx={{ fontSize: 16 }} className="text-stosimo-blue" />
-                <span>+91 8438821762</span>
+                <span>04364-299144</span>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
                 <LocationOn sx={{ fontSize: 16 }} className="text-stosimo-blue" />

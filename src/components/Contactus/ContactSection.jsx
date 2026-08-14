@@ -79,7 +79,7 @@ const ContactSection = () => {
               <h2 className="contact-title">To Make Requests for  Further Information, Contact Us</h2>
               <div className="contact-info-item">
                 <div className="contact-icon"><FiPhone /></div>
-                <div className="contact-info-text"><span>Call Us</span><h5><a href="tel:8438821762">+91 8438821762</a></h5></div>
+                <div className="contact-info-text"><span>Call Us</span><h5><a href="tel:8438821762">04364-299144</a></h5></div>
               </div>
               <div className="contact-info-item">
                 <div className="contact-icon"><FiMapPin /></div>
