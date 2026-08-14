@@ -105,7 +105,7 @@ const HeaderNav = () => {
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
                 <AccessTime sx={{ fontSize: 16 }} className="text-stosimo-blue" />
-                <span>8.00am - 10.00pm</span>
+                <span>09.00am - 07.00pm</span>
               </motion.div>
             </div>
             <div className="flex items-center gap-4">

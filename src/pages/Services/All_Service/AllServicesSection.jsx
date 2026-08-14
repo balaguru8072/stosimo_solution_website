@@ -45,7 +45,7 @@ const getImage = (title = "") => {
     }
 
     if (t.includes("app") || t.includes("mobile")) {
-        return "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9?w=600&h=400&fit=crop";
+        return "https://images.pexels.com/photos/7151031/pexels-photo-7151031.jpeg";
     }
 
     if (t.includes("data") || t.includes("digital")) {
