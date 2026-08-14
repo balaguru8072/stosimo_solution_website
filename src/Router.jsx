@@ -1,6 +1,6 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Layout from './Layout';
+import Layout from './Layout'; // Correct import
 import Parts from './pages/page_parts/parts';
 import AboutusParts from './pages/About_us/AboutUs_part/AboutusParts';
 import WebDevelpment from './pages/Services/WebDevelpment';
@@ -19,56 +19,26 @@ const router = createBrowserRouter([
     path: '/',
     element: <Layout />,
     children: [
-      {
-        index: true,
-        element: <Parts />
-      },
-      {
-        path: 'aboutus',
-        element: <AboutusParts />
-      },{
-        path: '/services/all-services',
-        element: <AllServicesSection />
-      },
-      {
-        path: '/services/web-development',
-        element: <WebDevelpment />
-      },{
-        path: '/services/app-development',
-        element: <AppDevelopment />
-      },
-      {
-        path: '/services/ui-ux-design',
-        element: <UiAndUxDesign />
-      },{
-        path: '/services/digital-marketing',
-        element: <DigitalMaketing />
-      },
-      {
-        path: '/projects/details',
-        element: <Project_Details />
-      },{
-        path: '/projects',
-        element: <All_Projects />
-      },{
-        path: '/career',
-        element : <CareerPage />
-      },{
-
-        path: '/career/job/:id',
-        element: <JobDetails />
-      },
-      
-      {
-        path: 'contact',
-        element: <ContactSection />
-      }
+      { index: true, element: <Parts /> },
+      { path: 'aboutus', element: <AboutusParts /> },
+      { path: 'services/all-services', element: <AllServicesSection /> },
+      { path: 'services/web-development', element: <WebDevelpment /> },
+      { path: 'services/app-development', element: <AppDevelopment /> },
+      { path: 'services/ui-ux-design', element: <UiAndUxDesign /> },
+      { path: 'services/digital-marketing', element: <DigitalMaketing /> },
+      { path: 'projects/details', element: <Project_Details /> },
+      { path: 'projects', element: <All_Projects /> },
+      { path: 'career', element : <CareerPage /> },
+      { path: 'career/job/:id', element: <JobDetails /> },
+      { path: 'contact', element: <ContactSection /> },
+      // IMPORTANT: 404 ku intha route add pannu
+      { path: '*', element: <Parts /> }
     ]
   }
 ]);
 
-const Router = () => {
+const AppRouter = () => {
   return <RouterProvider router={router} />;
 };
 
-export default Router;
+export default AppRouter;

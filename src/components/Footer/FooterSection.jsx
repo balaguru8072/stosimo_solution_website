@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { FiMail, FiMapPin, FiPhone, FiSend } from 'react-icons/fi';
 import { FaFacebookF, FaTwitter, FaDribbble, FaInstagram } from 'react-icons/fa';
+// import { Link } from 'lucide-reacts';
+import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
   const [email, setEmail] = useState('');
@@ -528,7 +530,7 @@ const FooterSection = () => {
                 <ul className="footer-links">
                   {usefulLinks.map((link, index) => (
                     <li key={index}>
-                      <a href={link.link}>{link.name}</a>
+                      <Link to={link.link}>{link.name}</Link>
                     </li>
                   ))}
                 </ul>
@@ -540,7 +542,7 @@ const FooterSection = () => {
                 <ul className="footer-links">
                   {services.map((service, index) => (
                     <li key={index}>
-                      <a href={service.link}>{service.name}</a>
+                      <Link to={service.link}>{service.name}</Link>
                     </li>
                   ))}
                 </ul>
