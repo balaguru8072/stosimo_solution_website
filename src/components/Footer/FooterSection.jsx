@@ -25,11 +25,11 @@ const FooterSection = () => {
   ];
 
   const services = [
-    { name: 'Blockchain technology', link: '/services/blockchain' },
-    { name: 'Advanced Technology', link: '/services/advanced' },
-    { name: 'Infrastructure Technology', link: '/services/infrastructure' },
-    { name: 'Data Management', link: '/services/data' },
-    { name: 'Security Management', link: '/services/security' }
+    { name: 'Web Development', link: '/services/web-development' },
+    { name: 'App Development', link: '/services/app-development' },
+    { name: 'Digital Marketing', link: '/services/digital-marketing' },
+    { name: 'CCTV Installation', link: '/contact' },
+    { name: 'UI/UX Design', link: '/services/ui-ux-design' }
   ];
 
   const socialLinks = [
@@ -556,7 +556,7 @@ const FooterSection = () => {
                   </div>
                   <div className="contact-info-text">
                     <span>Mail Us:</span>
-                    <h6><a href="mailto:stosimo@gmail.com">stosimo@gmail.com</a></h6>
+                    <h6><a href="mailto:hr@stosimo.com">hr@stosimo.com</a></h6>
                   </div>
                 </div>
 
@@ -566,7 +566,7 @@ const FooterSection = () => {
                   </div>
                   <div className="contact-info-text">
                     <span>Address:</span>
-                    <h6>3770 hidden meadow<br />drive venturia, nd 58489</h6>
+                    <h6>Kuthalam<br />Mayiladuthurai , 609801</h6>
                   </div>
                 </div>
 
@@ -576,7 +576,7 @@ const FooterSection = () => {
                   </div>
                   <div className="contact-info-text">
                     <span>Phone:</span>
-                    <h6><a href="tel:7045550127">(704) 555-0127</a></h6>
+                    <h6><a href="tel:8438821762">+91 8438821762</a></h6>
                   </div>
                 </div>
               </div>

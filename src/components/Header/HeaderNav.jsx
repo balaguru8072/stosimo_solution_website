@@ -30,6 +30,7 @@ const HeaderNav = () => {
       title: 'Services',
       hasDropdown: true,
       links: [
+        { name: 'All Services', path: '/services/all-services' },
         { name: 'Web Development', path: '/services/web-development' },
         { name: 'App Development', path: '/services/app-development' },
         { name: 'UI/UX Design', path: '/services/ui-ux-design' },
@@ -96,11 +97,11 @@ const HeaderNav = () => {
             <div className="flex items-center gap-6">
               <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
                 <Phone sx={{ fontSize: 16 }} className="text-stosimo-blue" />
-                <span>+44 920 090 505</span>
+                <span>+91 8438821762</span>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
                 <LocationOn sx={{ fontSize: 16 }} className="text-stosimo-blue" />
-                <span>60 East 65th Street, NY</span>
+                <span>Kuthalam, Mayiladuthurai , 609801</span>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
                 <AccessTime sx={{ fontSize: 16 }} className="text-stosimo-blue" />

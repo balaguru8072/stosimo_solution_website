@@ -79,15 +79,15 @@ const ContactSection = () => {
               <h2 className="contact-title">To Make Requests for  Further Information, Contact Us</h2>
               <div className="contact-info-item">
                 <div className="contact-icon"><FiPhone /></div>
-                <div className="contact-info-text"><span>Call Us</span><h5><a href="tel:+69009494094">+69 009 494 094</a></h5></div>
+                <div className="contact-info-text"><span>Call Us</span><h5><a href="tel:8438821762">+91 8438821762</a></h5></div>
               </div>
               <div className="contact-info-item">
                 <div className="contact-icon"><FiMapPin /></div>
-                <div className="contact-info-text"><span>Our Location</span><h5>147 New Yors, NY Adipisicing 123</h5></div>
+                <div className="contact-info-text"><span>Our Location</span><h5>Kuthalam<br />Mayiladuthurai , 609801</h5></div>
               </div>
               <div className="contact-info-item">
                 <div className="contact-icon"><FiMail /></div>
-                <div className="contact-info-text"><span>Mail us</span><h5><a href="mailto:hello@stosimo.com">hello@stosimo.com</a></h5></div>
+                <div className="contact-info-text"><span>Mail us</span><h5><a href="mailto:hr@stosimo.com">hr@stosimo.com</a></h5></div>
               </div>
             </div>
 

@@ -12,6 +12,7 @@ import CareerPage from './pages/Career_Page/CareerPage';
 import ContactSection from './components/Contactus/ContactSection';
 import JobDetails from './pages/Career_Page/Job_Opening/JobDetails';
 import DigitalMaketing from './pages/Services/Digital_Maket/DigitalMaketing';
+import AllServicesSection from './pages/Services/All_Service/AllServicesSection';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,9 @@ const router = createBrowserRouter([
       {
         path: 'aboutus',
         element: <AboutusParts />
+      },{
+        path: '/services/all-services',
+        element: <AllServicesSection />
       },
       {
         path: '/services/web-development',

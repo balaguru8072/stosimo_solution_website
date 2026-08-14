@@ -433,7 +433,7 @@ const WhyChooseUsSection = () => {
                                 stosimo is the partner of choice for many of the world's leading enterprises,
                             </p>
 
-                            <div className="client-section">
+                            {/* <div className="client-section">
                                 <div className="client-avatars">
                                     {clients.map((client, index) => (
                                         <div key={index} className="client-avatar">
@@ -445,7 +445,7 @@ const WhyChooseUsSection = () => {
                                     <h4>Join our 50503+</h4>
                                     <h4>Satisfied World Clients</h4>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="global-box">
                                 <div className="global-icon">
@@ -453,7 +453,7 @@ const WhyChooseUsSection = () => {
                                 </div>
                                 <div className="global-content">
                                     <h5>Global Company</h5>
-                                    <p>Our great team of more than to 1400 software experts member.</p>
+                                    <p>Our great team of more than experts member.</p>
                                 </div>
                             </div>
                         </div>

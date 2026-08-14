@@ -52,7 +52,7 @@ const ExperienceSection = () => {
             {/* Left Column - Col 1 */}
             <div className="col-lg-6">
               {/* 24+ Big Text */}
-              <div className="mb-3">
+              {/* <div className="mb-3">
                 <h2 
                   className="fw-bold mb-0" 
                   style={{ 
@@ -66,7 +66,7 @@ const ExperienceSection = () => {
                 <p className="text-secondary fs-5 mt-2">
                   Years of Experience
                 </p>
-              </div>
+              </div> */}
 
               {/* Main Heading */}
               <h3 
@@ -126,10 +126,10 @@ const ExperienceSection = () => {
                 </div>
                 <div className="d-flex justify-content-between align-items-center">
                   <p className="mb-0" style={{ color: '#334155', fontSize: '16px', fontWeight: '500' }}>
-                    IT Management
+                    Digital Marketing
                   </p>
                   <p className="mb-0 fw-bold" style={{ color: '#0F172A', fontSize: '16px' }}>
-                    86%
+                    80%
                   </p>
                 </div>
               </div>
@@ -163,7 +163,7 @@ const ExperienceSection = () => {
                 </div>
                 <div className="d-flex justify-content-between align-items-center">
                   <p className="mb-0" style={{ color: '#334155', fontSize: '16px', fontWeight: '500' }}>
-                    Data Security
+                    IT Management
                   </p>
                   <p className="mb-0 fw-bold" style={{ color: '#0F172A', fontSize: '16px' }}>
                     90%
