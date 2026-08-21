@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FiPhone, FiMapPin, FiMail, FiSend } from 'react-icons/fi';
+import SEO from '../../components/SEO';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -66,6 +67,12 @@ const ContactSection = () => {
         .submit-btn:disabled { opacity: 0.6; cursor: not-allowed; }
       `}</style>
 
+      <SEO
+        title="Stosimo - Best IT Services & Solutions Company"
+        description="Stosimo is a top IT services company offering Web Development, App Development, UI/UX Design & Digital Marketing. We provide world-class IT infrastructure solutions."
+        keywords="IT services, web development, app development, ui ux design, stosimo"
+        canonical="/contact"
+      />
       <section className="contact-section">
         <div className="bg-shape bg-shape-1"></div>
         <div className="bg-shape bg-shape-2"></div>

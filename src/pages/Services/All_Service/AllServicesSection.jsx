@@ -12,6 +12,7 @@ import {
     Search,
     ArrowUpRight,
 } from "lucide-react";
+import SEO from "../../../components/SEO";
 
 const API_URL =
     "https://stosimo-solution-backend1.onrender.com/api/services";
@@ -142,6 +143,12 @@ export default function AllServicesSection() {
                     `
                 }
             </style>
+            <SEO
+                title="Stosimo - Best IT Services & Solutions Company"
+                description="Stosimo is a top IT services company offering Web Development, App Development, UI/UX Design & Digital Marketing. We provide world-class IT infrastructure solutions."
+                keywords="IT services, web development, app development, ui ux design, stosimo"
+                canonical="/services/ui-ux-design"
+            />
             <section className="bg-[#eef4ff] py-16 px-6">
                 <div className="max-w-7xl mx-auto">
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
