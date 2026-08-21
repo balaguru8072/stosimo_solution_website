@@ -8,8 +8,8 @@ function WebDevelpment() {
     return (
         <div>
             <SEO
-                title="Stosimo - Best IT Services & Solutions Company"
-                description="Stosimo is a top IT services company offering Web Development, App Development, UI/UX Design & Digital Marketing. We provide world-class IT infrastructure solutions."
+                title="Web Development Company - Stosimo | React, Next.js"
+                description="Custom website development services in Karaikal. We build fast, SEO friendly websites using React, Next.js & MERN stack."
                 keywords="IT services, web development, app development, ui ux design, stosimo"
                 canonical="/services/web-development"
             />

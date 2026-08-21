@@ -7,12 +7,12 @@ import SEO from '../../components/SEO';
 function AppDevelopment() {
     return (
         <div>
-        <SEO
-          title="Stosimo - Best IT Services & Solutions Company"
-          description="Stosimo is a top IT services company offering Web Development, App Development, UI/UX Design & Digital Marketing. We provide world-class IT infrastructure solutions."
-          keywords="IT services, web development, app development, ui ux design, stosimo"
-          canonical="/services/app-development"
-        />
+            <SEO
+                title="App Development - Stosimo | Android & iOS Apps"
+                description="Best mobile app development company. We build high-performance Android & iOS apps for startups and enterprises."
+                keywords="IT services, web development, app development, ui ux design, stosimo"
+                canonical="/services/app-development"
+            />
             <AppsiteDevelopementSection />
             <OurServicesSection />
             <WebDevServicesSection />

@@ -6,14 +6,14 @@ import SEO from '../../components/SEO';
 function CareerPage() {
   return (
     <div>
-        <SEO
-          title="Stosimo - Best IT Services & Solutions Company"
-          description="Stosimo is a top IT services company offering Web Development, App Development, UI/UX Design & Digital Marketing. We provide world-class IT infrastructure solutions."
-          keywords="IT services, web development, app development, ui ux design, stosimo"
-          canonical="/career"
-        />
-        <JobOpenings />
-        <CareerForm />
+      <SEO
+        title="Careers at Stosimo - Hiring Web & App Developers"
+        description="Join Stosimo team! Openings for React Developers, UI/UX Designers. Apply now for IT jobs in Karaikal."
+        keywords="IT services, web development, app development, ui ux design, stosimo"
+        canonical="/career"
+      />
+      <JobOpenings />
+      <CareerForm />
     </div>
   )
 }
