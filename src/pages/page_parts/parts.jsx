@@ -20,7 +20,7 @@ function Parts() {
         <ServiceCards />
         <ExperienceSection />
         <ServiceListCards />
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
         <ContactSection />
     </div>
   )
