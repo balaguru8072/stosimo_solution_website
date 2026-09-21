@@ -1,8 +1,8 @@
 import React from 'react'
 import UiUxDesign from './Ui_Ux_Designes/UiUxDesign'
 import OurServicesSection from './Web_Developement/OurServicesSection'
-import WebDevServicesSection from './Web_Developement/WebDevServicesSection'
 import SEO from '../../components/SEO';
+import UiUxServicesSection from './Ui_Ux_Designes/UiUxServicesSection';
 
 function UiAndUxDesign() {
     return (
@@ -15,7 +15,7 @@ function UiAndUxDesign() {
             />
             <UiUxDesign />
             <OurServicesSection />
-            <WebDevServicesSection />
+            <UiUxServicesSection />
         </div>
     )
 }

@@ -1,8 +1,8 @@
 import React from 'react'
 import AppsiteDevelopementSection from './App_Development/AppsiteDevelopementSection'
 import OurServicesSection from './Web_Developement/OurServicesSection'
-import WebDevServicesSection from './Web_Developement/WebDevServicesSection'
 import SEO from '../../components/SEO';
+import AppDevServicesSection from './App_Development/AppDevServicesSection';
 
 function AppDevelopment() {
     return (
@@ -15,7 +15,7 @@ function AppDevelopment() {
             />
             <AppsiteDevelopementSection />
             <OurServicesSection />
-            <WebDevServicesSection />
+            <AppDevServicesSection />
         </div>
     )
 }

@@ -360,8 +360,8 @@ const OurServicesSection = () => {
             <div className="all-services-badge">All Services</div>
             <h2 className="services-title">Our Services</h2>
             <p className="services-desc">
-              Comprehensive Website Services to Ignite Your Online Success. Empower
-              Your Business with Powerful Online Services from our Website.
+              We transform bold ideas into market-ready digital products. 
+              Engineering scalable web and mobile software backed by strategic UI/UX and targeted growth marketing.
             </p>
           </div>
 

@@ -33,7 +33,7 @@ const WebsiteDevelopmentSection = () => {
   }, []);
 
   const handleChange = (e) => {
-    setFormData({...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
@@ -41,7 +41,7 @@ const WebsiteDevelopmentSection = () => {
     setLoading(true);
     try {
       const payload = {
-       ...formData,
+        ...formData,
         phone: `+91${formData.phone}`,
         source: 'Website Development Banner'
       };
@@ -114,16 +114,16 @@ const WebsiteDevelopmentSection = () => {
       <section className="webdev-section" ref={sectionRef}>
         <div className="webdev-bg"></div>
         <div className="webdev-container">
-          <div className={`webdev-left ${isVisible? 'animate' : ''}`}>
+          <div className={`webdev-left ${isVisible ? 'animate' : ''}`}>
             <h1 className="website-text">Website</h1>
             <h2 className="development-text">Development</h2>
             <p className="webdev-desc">
-              Unlock the Power of Web Presence with our Professional Website Designing Service!
-              Elevate Your Online Presence with Stunning Website Designs.
+              Built with modern frameworks for lightning-fast speed, bulletproof security, and
+              seamless user experiences across all screen sizes and devices.
             </p>
           </div>
 
-          <div className={`webdev-right ${isVisible? 'animate' : ''}`}>
+          <div className={`webdev-right ${isVisible ? 'animate' : ''}`}>
             <div className="form-card">
               <h3 className="form-title">Drop Us a Message</h3>
               <form onSubmit={handleSubmit}>
@@ -133,7 +133,7 @@ const WebsiteDevelopmentSection = () => {
                 </div>
 
                 <div className="form-row">
-                  <div className="form-group" style={{width:'100%'}}>
+                  <div className="form-group" style={{ width: '100%' }}>
                     <label className="form-label">Phone No*</label>
                     <div className="phone-input-group">
                       <div className="country-code">
@@ -146,11 +146,11 @@ const WebsiteDevelopmentSection = () => {
                 </div>
 
                 <div className="form-row">
-                  <div className="form-group" style={{flex:1}}>
+                  <div className="form-group" style={{ flex: 1 }}>
                     <label className="form-label">Email*</label>
                     <input type="email" name="email" className="form-input" value={formData.email} onChange={handleChange} required />
                   </div>
-                  <div className="form-group" style={{flex:1}}>
+                  <div className="form-group" style={{ flex: 1 }}>
                     <label className="form-label">Service*</label>
                     <select name="service" className="form-select" value={formData.service} onChange={handleChange}>
                       <option>Website Development</option>
@@ -177,7 +177,7 @@ const WebsiteDevelopmentSection = () => {
                 </div>
 
                 <button type="submit" className="submit-btn" disabled={loading}>
-                  {loading? 'Sending...' : 'Connect With Vdigtech Today'}
+                  {loading ? 'Sending...' : 'Connect With Vdigtech Today'}
                   {!loading && <FiArrowUpRight />}
                 </button>
               </form>

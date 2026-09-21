@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { FiCheck, FiArrowRight } from 'react-icons/fi';
 import { HiOutlineDesktopComputer } from 'react-icons/hi';
+import { Link } from 'react-router-dom';
 import vrKid from '../../assets/images/vrKid.jpg';
 import teamCircle from '../../assets/images/teamCircle.png';
 import client1 from '../../assets/images/client_1.png';
@@ -445,6 +446,10 @@ const AboutCompanySection = () => {
           opacity: 0;
           transform: translateY(20px);
           transition: all 0.6s ease 1.1s, transform 0.3s ease, box-shadow 0.3s ease;
+          text-decoration: none;
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
         }
 
       .cta-btn.animate {
@@ -517,16 +522,16 @@ const AboutCompanySection = () => {
 
       <section className="about-section" ref={sectionRef}>
         <div className="network-bg"></div>
-        
+
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6 col-12">
-              <div className={`images-wrapper ${isVisible? 'animate' : ''}`}>
+              <div className={`images-wrapper ${isVisible ? 'animate' : ''}`}>
                 <div className="vr-image-container">
                   <img src={vrKid} alt="VR Technology" />
                 </div>
 
-                <div className={`blue-card ${isVisible? 'animate' : ''}`}>
+                <div className={`blue-card ${isVisible ? 'animate' : ''}`}>
                   <div className="blue-card-icon">
                     <HiOutlineDesktopComputer />
                   </div>
@@ -535,31 +540,31 @@ const AboutCompanySection = () => {
                   </p>
                 </div>
 
-                <div className={`team-circle ${isVisible? 'animate' : ''}`}>
+                <div className={`team-circle ${isVisible ? 'animate' : ''}`}>
                   <img src={teamCircle} alt="Team Collaboration" />
                 </div>
               </div>
             </div>
 
             <div className="col-lg-6 col-12">
-              <div className={`content-wrapper ${isVisible? 'animate' : ''}`}>
-                <span className={`about-badge ${isVisible? 'animate' : ''}`}>
+              <div className={`content-wrapper ${isVisible ? 'animate' : ''}`}>
+                <span className={`about-badge ${isVisible ? 'animate' : ''}`}>
                   ABOUT OUR COMPANY
                 </span>
-                
-                <h2 className={`about-title ${isVisible? 'animate' : ''}`}>
+
+                <h2 className={`about-title ${isVisible ? 'animate' : ''}`}>
                   Accelerate Innovation with World-Class Tech
                 </h2>
-                
-                <p className={`about-desc ${isVisible? 'animate' : ''}`}>
+
+                <p className={`about-desc ${isVisible ? 'animate' : ''}`}>
                   Accelerate innovation with world-class tech teams We'll match you to an entire remote team of incredible freelance talent for all your software development needs.
                 </p>
 
                 <div className="services-list">
                   {services.map((service, index) => (
-                    <div 
-                      key={index} 
-                      className={`service-item ${isVisible? 'animate' : ''}`}
+                    <div
+                      key={index}
+                      className={`service-item ${isVisible ? 'animate' : ''}`}
                     >
                       <div className="service-icon">
                         <FiCheck />
@@ -583,7 +588,7 @@ const AboutCompanySection = () => {
                   </div>
                 </div> */}
 
-                <div className={`global-company ${isVisible? 'animate' : ''}`}>
+                <div className={`global-company ${isVisible ? 'animate' : ''}`}>
                   <div className="global-icon">
                     <HiOutlineDesktopComputer />
                   </div>
@@ -593,10 +598,10 @@ const AboutCompanySection = () => {
                   </div>
                 </div>
 
-                <button className={`cta-btn ${isVisible? 'animate' : ''}`}>
+                <Link to="/contact" className={`cta-btn ${isVisible ? 'animate' : ''}`}>
                   Get In Touch
                   <FiArrowRight />
-                </button>
+                </Link>
               </div>
             </div>
           </div>

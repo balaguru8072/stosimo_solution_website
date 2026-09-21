@@ -152,8 +152,8 @@ const AppsiteDevelopementSection = () => {
                         <h1 className="website-text">App</h1>
                         <h2 className="development-text">Development</h2>
                         <p className="webdev-desc">
-                            Unlock the Power of Web Presence with our Professional Website Designing Service!
-                            Elevate Your Online Presence with Stunning Website Designs.
+                            Fast, scalable, and built for market fit. 
+                            We help founders and growing businesses launch high-impact apps on iOS, Android, and cross-platform stacks.
                         </p>
                     </div>
 

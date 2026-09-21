@@ -17,9 +17,7 @@ import SEO from "../../../components/SEO";
 const API_URL =
     "https://stosimo-solution-backend1.onrender.com/api/services";
 
-// ------------------------------------
-// Icon Mapping
-// ------------------------------------
+
 const getIcon = (title = "") => {
     const t = title.toLowerCase();
 
@@ -35,9 +33,6 @@ const getIcon = (title = "") => {
     return TrendingUp;
 };
 
-// ------------------------------------
-// Image Mapping
-// ------------------------------------
 const getImage = (title = "") => {
     const t = title.toLowerCase();
 
@@ -73,9 +68,6 @@ export default function AllServicesSection() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
 
-    // ------------------------------------
-    // Fetch Services
-    // ------------------------------------
     useEffect(() => {
         const fetchServices = async () => {
             try {
@@ -101,10 +93,6 @@ export default function AllServicesSection() {
 
         fetchServices();
     }, []);
-
-    // ------------------------------------
-    // Loading
-    // ------------------------------------
     if (loading) {
         return (
             <section className="bg-[#eef4ff] py-16 px-6">
@@ -114,10 +102,6 @@ export default function AllServicesSection() {
             </section>
         );
     }
-
-    // ------------------------------------
-    // Error
-    // ------------------------------------
     if (error) {
         return (
             <section className="bg-[#eef4ff] py-16 px-6">
@@ -127,19 +111,14 @@ export default function AllServicesSection() {
             </section>
         );
     }
-
-    // ------------------------------------
-    // Main Section
-    // ------------------------------------
     return (
         <>
-
             <style>
                 {
                     `
-                    .hover-blue-colur:hover {
-                        background-color: #2563eb !important;
-                    }
+                        .hover-blue-colur:hover {
+                            background-color: #2563eb !important;
+                        }
                     `
                 }
             </style>
@@ -154,114 +133,32 @@ export default function AllServicesSection() {
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                         {services.map((service, i) => {
                             const Icon = getIcon(service?.title);
-
                             return (
-                                <div
-                                    key={service?._id || i}
-                                    className="
-                                            group
-                                            relative
-                                            rounded-3xl
-                                            p-6
-                                            bg-white
-                                            text-gray-900
-                                            overflow-hidden
-                                            cursor-pointer
-                                            transition-all
-                                            duration-300
-                                            hover:-translate-y-2
-                                            hover:shadow-2xl
-                                            hover-blue-colur
-                                            hover:text-white
-                                            "
-                                >
-                                    {/* -------------------------------- */}
+                                <div key={service?._id || i} className="group relative rounded-3xl p-6 bg-white text-gray-900 overflow-hidden cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover-blue-colur hover:text-white">
                                     {/* Top Row - Icon + Arrow */}
-                                    {/* -------------------------------- */}
                                     <div className="flex justify-between items-start mb-10">
                                         {/* Icon Box */}
-                                        <div
-                                            className="
-                      w-16 h-16
-                      rounded-2xl
-                      flex items-center justify-center
-                      bg-[#eef4ff]
-                      group-hover:bg-white/20
-                      transition-all
-                      duration-300
-                    "
-                                        >
-                                            <Icon
-                                                className="
-                        w-8 h-8
-                        text-[#2563eb]
-                        group-hover:text-white
-                        transition-colors
-                        duration-300
-                      "
-                                            />
+                                        <div className="w-16 h-16 rounded-2xl flex items-center justify-center bg-[#eef4ff] group-hover:bg-white/20 transition-all duration-300">
+                                            <Icon className="w-8 h-8 text-[#2563eb] group-hover:text-white transition-colors duration-300" />
                                         </div>
 
                                         {/* Arrow */}
-                                        <div
-                                            className="
-                      w-10 h-10
-                      rounded-full
-                      flex items-center justify-center
-                      bg-[#f5f8ff]
-                      group-hover:bg-white
-                      transition-all
-                      duration-300
-                    "
-                                        >
-                                            <ArrowUpRight
-                                                className="
-                        w-5 h-5
-                        text-[#2563eb]
-                        transition-transform
-                        duration-300
-                        group-hover:translate-x-1
-                        group-hover:-translate-y-1
-                      "
-                                            />
+                                        <div className=" w-10 h-10 rounded-full flex items-center justify-center bg-[#f5f8ff] group-hover:bg-white transition-all duration-300">
+                                            <ArrowUpRight className="w-5 h-5 text-[#2563eb] transition-transform duration-300n group-hover:translate-x-1 group-hover:-translate-y-1" />                                        
                                         </div>
                                     </div>
-
-                                    {/* -------------------------------- */}
                                     {/* Service Title */}
-                                    {/* -------------------------------- */}
-                                    <h3
-                                        className="
-                    text-xl
-                    font-bold
-                    mb-6
-                    leading-tight
-                    text-gray-900
-                    group-hover:text-white
-                    transition-colors
-                    duration-300
-                  "
-                                    >
+
+                                    <h3 className="text-xl font-bold mb-6 leading-tight text-gray-900 group-hover:text-white transition-colors duration-300">
                                         {service?.title}
                                     </h3>
-
-                                    {/* -------------------------------- */}
                                     {/* Service Image */}
-                                    {/* -------------------------------- */}
                                     <div className="rounded-2xl overflow-hidden h-48">
                                         <img
                                             src={getImage(service?.title)}
                                             alt={service?.title || "Service"}
-                                            className="
-                      w-full
-                      h-full
-                      object-cover
-                      grayscale
-                      group-hover:grayscale-0
-                      group-hover:scale-105
-                      transition-all
-                      duration-500
-                    "
+                                            className="w-full h-full object-cover grayscale group-hover:grayscale-0 
+                                            group-hover:scale-105 transition-all duration-500 "
                                         />
                                     </div>
                                 </div>
