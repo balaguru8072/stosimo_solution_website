@@ -103,17 +103,19 @@ const HeaderNav = () => {
                 <LocationOn sx={{ fontSize: 16 }} className="text-stosimo-blue" />
                 <span>Kuthalam, Mayiladuthurai , 609801</span>
               </motion.div>
+              
+            </div>
+            <div className="flex items-center gap-4">
+              {/* {[Facebook, Twitter, Public, Instagram].map((Icon, i) => (
+                <motion.div key={i} whileHover={{ scale: 1.2, rotate: 5 }} whileTap={{ scale: 0.9 }}>
+                  <Icon sx={{ fontSize: 18 }} className="cursor-pointer hover:text-stosimo-blue transition-colors" />
+                </motion.div>
+              ))} */}
+
               <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
                 <AccessTime sx={{ fontSize: 16 }} className="text-stosimo-blue" />
                 <span>09.00am - 07.00pm</span>
               </motion.div>
-            </div>
-            <div className="flex items-center gap-4">
-              {[Facebook, Twitter, Public, Instagram].map((Icon, i) => (
-                <motion.div key={i} whileHover={{ scale: 1.2, rotate: 5 }} whileTap={{ scale: 0.9 }}>
-                  <Icon sx={{ fontSize: 18 }} className="cursor-pointer hover:text-stosimo-blue transition-colors" />
-                </motion.div>
-              ))}
             </div>
           </div>
         </div>

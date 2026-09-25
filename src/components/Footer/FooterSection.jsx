@@ -508,7 +508,7 @@ const FooterSection = () => {
                   </button>
                 </form> */}
 
-                <div className="social-links">
+                <div className="social-links d-none">
                   {socialLinks.map((social, index) => (
                     <a
                       key={index}
